@@ -33,6 +33,8 @@ namespace Unity.FPS.UI
         Health m_PlayerHealth;
         FramerateCounter m_FramerateCounter;
 
+        public GameObject Inventory;
+
         void Start()
         {
             m_PlayerInputsHandler = FindObjectOfType<PlayerInputHandler>();
@@ -63,11 +65,15 @@ namespace Unity.FPS.UI
         void Update()
         {
             // Lock cursor when clicking outside of menu
-            if (!MenuRoot.activeSelf && Input.GetMouseButtonDown(0))
+            if(Inventory.activeSelf == false)
             {
-                Cursor.lockState = CursorLockMode.Locked;
-                Cursor.visible = false;
+                if (!MenuRoot.activeSelf && Input.GetMouseButtonDown(0))
+                {
+                    Cursor.lockState = CursorLockMode.Locked;
+                    Cursor.visible = false;
+                }
             }
+            
 
             if (Input.GetKeyDown(KeyCode.Escape))
             {

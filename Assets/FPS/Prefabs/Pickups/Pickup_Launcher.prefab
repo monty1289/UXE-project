@@ -44,7 +44,8 @@ GameObject:
   - component: {fileID: 7671270577186476432}
   - component: {fileID: 7671270577186476447}
   - component: {fileID: 7671270577186476435}
-  - component: {fileID: 4816392453436198642}
+  - component: {fileID: 7022428028201352784}
+  - component: {fileID: 9062362545755116184}
   m_Layer: 0
   m_Name: Pickup_Launcher
   m_TagString: Untagged
@@ -121,49 +122,33 @@ MonoBehaviour:
   PickupVfxPrefab: {fileID: 0}
   WeaponPrefab: {fileID: 8323776800172828795, guid: 3439b4874b7b44e4eb2216314c46b85c,
     type: 3}
-  item: {fileID: 0}
---- !u!23 &4816392453436198642
-MeshRenderer:
+  item: {fileID: 11400000, guid: dd6f1af5d87683841b3954b03aee51fd, type: 2}
+--- !u!114 &7022428028201352784
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7671270577186476446}
   m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70b1a3ac094f09d449a74dcae7ea8c6f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  item: {fileID: 11400000, guid: dd6f1af5d87683841b3954b03aee51fd, type: 2}
+--- !u!114 &9062362545755116184
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7671270577186476446}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08fb36077b5a1794a9d61503b8ea08c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  item: {fileID: 11400000, guid: dd6f1af5d87683841b3954b03aee51fd, type: 2}
 --- !u!1001 &4626462719145872102
 PrefabInstance:
   m_ObjectHideFlags: 0

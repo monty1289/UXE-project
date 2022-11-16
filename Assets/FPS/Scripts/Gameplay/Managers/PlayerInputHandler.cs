@@ -106,6 +106,7 @@ namespace Unity.FPS.Gameplay
 
         public bool GetFireInputHeld()
         {
+            
             if (CanProcessInput())
             {
                 bool isGamepad = Input.GetAxis(GameConstants.k_ButtonNameGamepadFire) != 0f;
