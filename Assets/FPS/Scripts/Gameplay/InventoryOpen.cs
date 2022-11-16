@@ -1,3 +1,7 @@
+/*
+class to open and close inventory with i button
+*/
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;

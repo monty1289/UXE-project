@@ -38,6 +38,8 @@ public class InventoryManager : MonoBehaviour
             Destroy(item.gameObject);
         }
 
+        //displays item image and item name to inveventory 
+
         foreach(Item item in Items)
         {
             GameObject obj = Instantiate(InventoryItem, ItemContent);
@@ -58,7 +60,7 @@ public class InventoryManager : MonoBehaviour
 
         SetInventoryItems();
     }
-
+//enables remore button in items when click removeItem button
     public void EnableItemsRemove()
     {
         if(EnableRemove.isOn){
@@ -73,7 +75,7 @@ public class InventoryManager : MonoBehaviour
             }
         }
     }
-
+//calls item contraller to remove item prefab
     public void SetInventoryItems()
     {
         InventorItems = ItemContent.GetComponentsInChildren<InventorItemControllor>();

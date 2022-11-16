@@ -34,7 +34,7 @@ namespace Unity.FPS.Gameplay
                     {
                         playerWeaponsManager.SwitchWeapon(true);
                     }
-
+                    //adds item to inventory when prefab is picked up
                     PlayPickupFeedback();
                     InventoryManager.Instance.Add(item);
                     Destroy(gameObject);

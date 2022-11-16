@@ -1,3 +1,7 @@
+/*
+class to remor and add items to inventory
+*/
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -7,8 +11,6 @@ public class InventorItemControllor : MonoBehaviour
 {
 
     Item item;
-
-    bool playerWeaponsManager;
 
     public Button RemoveButton;
 

@@ -1,3 +1,6 @@
+/*
+gives item prefab an id, name, value and icon for displaying in inventory 
+*/
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
